@@ -1,0 +1,189 @@
+form {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin:2% auto;
+  font-family: Arial, sans-serif;
+}
+
+form input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #d2b48c; /* Tan color for borders */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form input[type="text"]:hover {
+  border-color: brown;
+  background-color: #f5f5dc; /* Light beige */
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: brown;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.8); /* Brown shadow */
+}
+
+form input[type="submit"] {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d2b48c; /* Tan */
+  color: black;
+  transform: scale(1.05);
+}
+
+form input[type="submit"]:active {
+  transform: scale(1);
+}
+
+form input {
+  font-family: inherit;
+}
+
+@keyframes hoverGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.8); /* Brown glow */
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+form input[type="text"]:hover,
+form input[type="submit"]:hover {
+  animation: hoverGlow 0.5s ease-in-out;
+}
+
+/* Table Container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+thead {
+  background-color: brown;
+  color: white;
+  text-align: left;
+}
+
+thead th {
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+/* Table Rows */
+tbody tr:nth-child(odd) {
+  background-color: beige;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5dc;
+}
+
+tbody tr:hover {
+  background-color: #ffe4c4; /* Lighter beige */
+  cursor: pointer;
+}
+
+/* Table Cells */
+td, th {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+td a {
+  color: brown;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: brown;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d2b48c; /* Tan */
+  color: black;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  td, th {
+    padding: 10px 15px;
+  }
+}
+
+
+/* Navigation Container */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Links */
+nav a {
+  color: brown;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+  background-color: #d2b48c; /* Tan */
+ 
+}
